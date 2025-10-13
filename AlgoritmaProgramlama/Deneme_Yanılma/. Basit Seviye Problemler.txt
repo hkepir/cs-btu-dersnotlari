@@ -1,0 +1,20 @@
+. Basit Seviye Problemler:
+Fibonacci Serisi Hesaplama: Kullanıcıdan bir sayı alıp, bu sayıya kadar olan Fibonacci serisini ekrana yazdıran bir program yazın.
+
+Asal Sayı Kontrolü: Kullanıcıdan bir sayı alarak, bu sayının asal olup olmadığını kontrol eden bir program yazın.
+
+Basamakları Toplama: Kullanıcıdan bir sayı alarak, bu sayının basamaklarının toplamını hesaplayan bir program yazın.
+
+2. Orta Seviye Problemler:
+Dizide En Büyük ve En Küçük Sayıları Bulma: Bir dizideki en büyük ve en küçük sayıları bulan ve ekrana yazdıran bir program yazın.
+
+Matris Toplamı: Kullanıcıdan iki matris alarak, bu iki matrisin toplamını hesaplayan ve sonucu ekrana yazdıran bir program yazın.
+
+String Palindrome Kontrolü: Kullanıcıdan bir kelime alarak, bu kelimenin palindrome olup olmadığını kontrol eden bir program yazın.
+
+3. İleri Seviye Problemler:
+Hanoi Kuleleri: Hanoi Kuleleri problemini çözen bir program yazın. (Rekursif çözüm önerilir)
+
+Matris Çarpımı: Kullanıcıdan iki matris alarak, bu iki matrisin çarpımını hesaplayan ve sonucu ekrana yazdıran bir program yazın.
+
+Turing Makinesi Simülasyonu: Basit bir Turing makinesi simülasyonu yaparak, bir girdi dizisinin belirli bir kurala göre işlenmesini sağlayan bir program yazın.
