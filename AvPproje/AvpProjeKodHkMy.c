@@ -1,6 +1,6 @@
 /*
-#Madina Yusupova 24360859922 1.Sinif Btu-Bm
-#Hilal Kepir 23360859088 1.Sinif Btu-Bm
+#Madina Yusupova 1.Sinif Btu-Bm
+#Hilal Kepir 1.Sinif Btu-Bm
 */
 #include <stdio.h>
 #include <stdlib.h>
