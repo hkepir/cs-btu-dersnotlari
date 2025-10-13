@@ -1,0 +1,15 @@
+Biyoinformatik: Biyolojinin (veya bilgisayar biliminin ) büyük bir dalıdır. Biyolojik problemleri çözmek için bilgisayar bilimi ve matematikten yararlanır.
+
+Geneomics: Canlıların genlerini detaylıca inceleyen bilim dalıdır.(Ör. genlerin işlevlerinin belirlenmesi, genetik hastalıkların araştırılması,...)
+
+Proteomics: Hücrelerde bulunan tüm proteinlerin yapılarını, işlevlerini ve etkileşimlerini analiz eden alandır.
+
+Metabonomics: Metabolik süreçlerde yer alan şeker, aminoasit, yağ asidi gibi küçük metabolitleri inceleyen bilim dalıdır. 
+
+Transcriptomics: RNA moleküllerini inceleyen bilim dalıdır. Ayrıca, hangi genlerin aktif olduğunu anlamamıza yardımcı 
+olur. 
+
+Glycomics: Canlılardaki şeker moleküllerini detaylıca inceleyen bilim dalıdır. 
+
+Lipomics: Canlılardaki yağ asitleri, fosfolipidler gibi lipid moleküllerini detaylıca inceleyen bilim dalıdır. 
+
