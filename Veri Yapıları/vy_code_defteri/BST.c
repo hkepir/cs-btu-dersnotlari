@@ -162,7 +162,7 @@ void kthSmallest(n* root, int* count, int k, int* result) {
         return;
     }
 
-    // 3. Sonra sağa git
+    // 3. Sonra saga git
     kthSmallest(root->right, count, k, result);
 }
 
