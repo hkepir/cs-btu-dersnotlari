@@ -5,11 +5,49 @@ print(x)
 x = 10
 print(x)
 
+#Bool
+# 0 disindaki tum sayilar true
+print(bool(0))
+print(bool(23))
+print(bool(-1))
+
 #String
 a = ""
 a = ''
 a = """ """
 print(type(a))
+
+a = 'Mehmet\'in telefonu bende kalmis.'
+a = "Bilgisayar"
+a[0]
+a[5]
+a[-1]
+a[1:3]
+a[:4]
+print(a[2:6:2])
+a[::2]
+a[::-1] #reverse the string
+
+c1="Ankara"
+c2="Antalya"
+oku = "{} ve {}".format(c1,c2)
+print(oku)
+
+oku2 = f"{c1} ile {c2}"
+print(oku2)
+
+print(*"Python",sep="\t") #P    y   t   h   o   n
+
+#String Methods
+s = "Istanbul"
+s.capitalize()
+s.count("a")
+s.endswith("l")
+s.find("s")
+s.isdigit()
+s = s.upper()
+print(s)
+
 
 print("----\n\n")
 

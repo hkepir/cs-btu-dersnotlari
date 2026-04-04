@@ -45,7 +45,8 @@ sayi_yaz = welcome
 sayi_yaz()
 welcome()
 
-#Argumanlar *args
+# Argumanlar *args 
+# works like tuple
 
 def selam(*args):
     print("selam",*args)
@@ -60,6 +61,9 @@ def meyve_sepeti(*meyve):
 
 meyve_sepeti("Apple","Banana","Orange","Berry")
 print("-----")
+
+# Keyword Argumans **kwargs
+# works like dict 
 
 def calisan(**bilgi):
     print("Soyadi:",bilgi["soyad"])
