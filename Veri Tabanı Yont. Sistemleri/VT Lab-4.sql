@@ -1,6 +1,5 @@
 CREATE TABLE
 
-
 SELECT *FROM product
 WHERE Price BETWEEN 18 AND 20;
 
