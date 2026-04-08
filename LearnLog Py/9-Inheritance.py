@@ -52,6 +52,9 @@ class yabanciKitaplar(kitap):
         return super().bilgileriGoster()
 
 #Dunder(magic,special) methods
+#Dunder stands for “double underscore” and refers to special methods in Python that start and end with __ (e.g., __init__, __str__, __len__).
+#These methods are automatically called by Python to define how objects behave.
+
 """
 class Kitap:
     def __init__(self, ad, yazar, sayfa):
