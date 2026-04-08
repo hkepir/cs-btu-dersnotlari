@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DepoSevkiyat depo_kod="IDT-34" tarih="2026-04-08">
+    <Urun id="100">
+        <Ad>Kablosuz Klavye</Ad>
+        <Kategori>Bilgisayar Bileşenleri</Kategori>
+        <StokBilgisi>
+            <Adet>50</Adet>
+            <RafNo>A-10</RafNo>
+        </StokBilgisi>
+    </Urun>
+
+    <Urun id="102">
+        <Ad>Oyuncu Mause</Ad>
+        <Kategori>Aksesuar</Kategori>
+        <StokBilgisi adeti="120" raf="B-05"/>
+    </Urun>
+
+    <Urun id="404">
+        <Ad>Smart Watch</Ad>
+        <Kategori>Aksesuar</Kategori>
+        <StokBilgisi>
+            <Adet>20</Adet>
+            <RafNo>C-09</RafNo>
+        </StokBilgisi>
+    </Urun>
+    
+    <Aciklama>
+        Hassas içerik, dikkatli taşıyınız.
+    </Aciklama>
+
+</DepoSevkiyat>

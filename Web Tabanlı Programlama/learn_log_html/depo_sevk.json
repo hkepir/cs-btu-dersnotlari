@@ -1,0 +1,27 @@
+{
+  "DepoSevkiyat": {
+    "depo_kod": "IST-34",
+    "tarih": "2026-04-08",
+    "Urunler": [
+      {
+        "id": 101,
+        "Ad": "Kablosuz Klavye",
+        "Kategori": "Bilgisayar Bileşenleri",
+        "StokBilgisi": {
+          "Adet": 50,
+          "RafNo": "A-12"
+        }
+      },
+      {
+        "id": 102,
+        "Ad": "Oyuncu Mouse",
+        "Kategori": "Aksesuar",
+        "StokBilgisi": {
+          "adeti": 120,
+          "raf": "B-05"
+        }
+      }
+    ],
+    "Aciklama": "Hassas içerik, dikkatli taşıyınız."
+  }
+}
