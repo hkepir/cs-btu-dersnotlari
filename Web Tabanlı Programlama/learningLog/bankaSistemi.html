@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Banka</title>
+    <style>
+        /*css*/
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f0f0f0;
+        }
+        h1{
+            color: darkblue;
+        }
+        .form-box{
+            background: #f0f0f0;
+            padding: 20px;
+            width: 300px;
+            margin: auto;
+            border-radius: 8px;
+        }
+        input{
+            margin: 5px;
+            padding: 8px;
+            width: 90%;
+        }
+        button{
+            padding: 10px;
+            background: darkblue;
+            color: #f0f0f0;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mini Bankacılık Sistemi</h1>
+    <div class="form-box">
+        <!--html -->
+        <form id="loginForm"> 
+            <label>Kullanıcı Adı:</label><br>
+            <input type="text" id="username"><br>
+            <label>Şifre:</label><br>
+            <input type="password" id="password"><br>
+            <button type="button" onclick="login()">Giriş Yap</button>
+        </form>
+    </div>
+
+    <script>
+        //javaScript
+        var users = [
+            {"username":"hicran","password":1234,"balance":5000},
+            {"username":"amine","password":4321,"balance":7000}
+        ];
+        //bu kodda json nerede kullanıldı???
+
+        function login(){
+            var u = document.getElementById("username").value;
+            var p = document.getElementById("password").value;
+        
+            var found = false;
+                for(var i = 0;i<users.length;i++){
+                    if(users[i].username == u && users[i].password == p){
+                        found = true;
+                        alert("Hoşgeldiniz "+u+" Bakiyeniz : "+users[i].balance+" TL");
+                    }
+                }
+                if(!found){
+                    alert("Hatalı Giriş Yaptınız !!!");
+                }
+        }
+    </script>
+    <!--XML-->
+    <div style="margin:20px">
+        <h3>Uyari</h3>
+        <sifre_kurali>Sifre 4 haneli olmalıdır.</sifre_kurali>
+    </div>
+</body>
+</html>
