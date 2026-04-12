@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Examples</title>
+  </head>
+  <body>
+    <h1>Example 1</h1>
+    <script type="text/javascript">
+      var kod = prompt("Lütfen 3 haneli bir kod giriniz:");
+
+      if (kod === "112") {
+        document.write("<h2 style='color:red'>🚨 Acil Alarm! Ambulans gönderiliyor...</h2>");
+      } else if (kod === "155") {
+        document.write("<h2 style='color:blue'>👮 Polis çağrıldı!</h2>");
+      } else if (kod === "110") {
+        document.write("<h2 style='color:orange'>🔥 İtfaiye yolda!</h2>");
+      } else {
+        document.write("<h2 style='color:green'>✅ Normal durum, yardım gerekmez.</h2>");
+      }
+    </script>
+    
+    <h2>Example 2</h2>
+    <script type="text/javascript">
+        var a,b;
+        a=10;
+        b=20;
+        c=a+b-5*8/2;
+        document.write("Merhaba js <br> Toplam sonucu:");
+        document.write(c);
+    </script>
+    
+     <!-- inner js -->
+    <button onclick='document.getElementById("mesaj").innerHTML="Merhaba";'>Tıkla</button> 
+    <p id="mesaj"></p>
+
+    <h3>Example 3</h3>
+    <!-- Buton HTML içinde -->
+    <input type="button" onclick="selamla()" value="Selam Ver">
+
+    <!-- Fonksiyon JavaScript içinde -->
+    <script type="text/javascript">
+        function selamla() {
+            alert("Selam:)");
+        }
+    </script>
+  </body>
+</html>
