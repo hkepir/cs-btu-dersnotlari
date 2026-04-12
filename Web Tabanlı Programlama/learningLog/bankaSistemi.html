@@ -37,7 +37,7 @@
 <body>
     <h1>Mini Bankacılık Sistemi</h1>
     <div class="form-box">
-        <!--html -->
+        <!--html ile form olustur -->
         <form id="loginForm"> 
             <label>Kullanıcı Adı:</label><br>
             <input type="text" id="username"><br>
@@ -45,15 +45,32 @@
             <input type="password" id="password"><br>
             <button type="button" onclick="login()">Giriş Yap</button>
         </form>
+        <!--
+            javaScrip ile dinamik form 
+                var form = document.createElement("form");
+                form.id = "loginForm";
+
+                var inputUser = document.createElement("input");
+                inputUser.type = "text";
+                inputUser.id = "username";
+
+                var inputPass = document.createElement("input");
+                inputPass.type = "password";
+                inputPass.id = "password";
+
+                form.appendChild(inputUser);
+                form.appendChild(inputPass);
+                document.body.appendChild(form);
+
+        -->
     </div>
 
     <script>
         //javaScript
         var users = [
-            {"username":"hicran","password":1234,"balance":5000},
-            {"username":"amine","password":4321,"balance":7000}
+            {"username":"hicran","password":1234,"balance":5000}, //JSON
+            {"username":"amine","password":4321,"balance":7000}   //JSON
         ];
-        //bu kodda json nerede kullanıldı???
 
         function login(){
             var u = document.getElementById("username").value;
@@ -73,8 +90,8 @@
     </script>
     <!--XML-->
     <div style="margin:20px">
-        <h3>Uyari</h3>
-        <sifre_kurali>Sifre 4 haneli olmalıdır.</sifre_kurali>
+        <h3>Uyarı</h3>
+        <sifre_kurali>Şifre 4 haneli olmalıdır.</sifre_kurali>
     </div>
 </body>
 </html>
