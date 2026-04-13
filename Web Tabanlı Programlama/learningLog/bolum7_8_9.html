@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Javascript 789</title>
+        <script type="text/Javascript">
+
+            function uygulamaBaslat() {
+                var ad = document.getElementById("kullaniciAd").value;
+                var yil = document.getElementById("dogumYil").value;
+            
+
+            if(ad==""||yil==""){
+                alert("Lutfen tum alanlari doldurun!");
+                return false;
+            }
+
+            var mevcutYil = new Date().getFullYear();
+            var yas = mevcutYil - parseInt(yil);
+
+            var oneriler = ["Elma","Armut","Portakal","Muz"];
+            var rastgeleIndis = Math.floor(Math.random()*oneriler.length);
+
+            var sonucMesaji = "Merhaba "+ad+"! Şu an "+yas+" yaşındasınız. ";
+            sonucMesaji += "Bugünkü meyve öneriniz: "+oneriler[rastgeleIndis];
+
+            document.getElementById("sonucEkran").innerHTML ="<h3>"+sonucMesaji+"</h3>";
+            }   
+            
+            
+            function renkDegistir(eleman,durum) {
+                if(durum=='ustunde')
+                    eleman.style.backgroundColor = "yellow";
+                else
+                    eleman.style.backgroundColor ="";
+            }
+        
+        </script>
+    </head>
+
+    <body>
+        <h2>Kullanıcı Bilgi Paneli</h2>
+        <form onsubmit="return false;">
+            Adınız: <input type="text" id="kullaniciAd"> <br><br>
+            Doğum Yılınız: <input type="number" id="dogumYil"> <br><br>
+
+            <input type="button" value="Hesapla ve Öner"
+                   onclick="uygulamaBaslat()"
+                   onmouseover="renkDegistir(this,'ustunde')"
+                   onmouseout="renkDegistir(this,'ayrildi')">
+
+        </form>
+
+        <div id="sonucEkran"></div>
+
+    </body>
+
+</html>
