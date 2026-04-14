@@ -2,13 +2,14 @@ import gymnasium as gym
 
 env = gym.make("CartPole-v1", render_mode="human")
 
-#1.hazir ortam CartPole-v1 / MountainCar-v0
+#1.hazir ortam CartPole-v1 / MountainCar-v0 s
 #2.Kendi register ettigimiz ortam.
 #3.Parametreli kullanim.
 
 
 # Reset environment to start a new episode
 observation, info = env.reset()
+#observation, info = env.reset(seed=42) seed ile her calistiginda ayni baslangic degeri
 # observation: what the agent can "see" - cart position, velocity, pole angle, etc.
 # info: extra debugging information (usually not needed for basic learning)
 
@@ -35,3 +36,35 @@ while not episode_over:
 
 print(f"Episode finished! Total reward: {total_reward}")
 env.close()
+
+"""
+import gymnasium as gym
+
+env = gym.make("CartPole-v1", render_mode="human")
+
+# --- SEED ve OPTIONS Tanımlama ---
+# Seed: Rastgeleliği sabitler.
+my_seed = 42 
+
+# Options: Başlangıç durumuna özel ayarlar (Eğer ortam destekliyorsa).
+# Örneğin bazı özel ortamlarda başlangıç konumunu böyle seçebilirsin:
+my_options = {"low": -0.05, "high": 0.05} 
+
+# Reset sırasında ikisini birden veya sadece birini gönderebilirsin
+observation, info = env.reset(seed=my_seed, options=None) 
+
+print(f"Sabitlenmiş Başlangıç Gözlemi: {observation}")
+
+episode_over = False
+total_reward = 0
+
+while not episode_over:
+    action = env.action_space.sample() 
+    observation, reward, terminated, truncated, info = env.step(action)
+    
+    total_reward += reward
+    episode_over = terminated or truncated
+
+print(f"Episode bitti! Toplam ödül: {total_reward}")
+env.close()
+"""
