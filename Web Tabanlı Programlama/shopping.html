@@ -1,0 +1,109 @@
+<html>
+<head>
+    <title>Single Page App</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h1, h2, h3 {
+            color: black;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .bolme1, .bolme2 {
+            background: #f0f0f0;
+            padding: 20px;
+            width: 400px;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        button {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bolme1">
+        <h1>Ürün Ekleme</h1>
+        <form onsubmit="return false;">
+            <input type="text" id="urunAdi" placeholder="Ürün adı">
+            <input type="number" id="urunFiyat" placeholder="Birim fiyat">
+            <input type="number" id="urunAdet" placeholder="Adet" step="0.1">
+            <button type="button" onclick="urunEkle()">Ekle</button>
+        </form>
+    </div>
+
+    <div class="bolme2">
+        <h2>Ürünler</h2>
+        <table id="urunTablosu">
+            <tr>
+                <th>Ürün Adı</th>
+                <th>Birim Fiyatı</th>
+                <th>Adet</th>
+                <th>Sil</th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="bolme3">
+        <h3>Toplam: <span id="toplam">0</span> TL</h3>
+    </div>
+
+    <script>
+        function urunEkle() {
+            let ad = document.getElementById("urunAdi").value;
+            let fiyat = parseFloat(document.getElementById("urunFiyat").value);
+            let adet = parseFloat(document.getElementById("urunAdet").value);
+
+            if (!ad || isNaN(fiyat) || isNaN(adet)) {
+                alert("Lütfen tüm alanları doldurun!");
+                return;
+            }
+
+            let tablo = document.getElementById("urunTablosu");
+            let satir = tablo.insertRow(-1);
+
+            satir.insertCell(0).innerText = ad;
+            satir.insertCell(1).innerText = fiyat;
+            satir.insertCell(2).innerText = adet;
+
+            let silBtn = document.createElement("button");
+            silBtn.innerText = "X";
+            silBtn.onclick = function() {
+                tablo.deleteRow(satir.rowIndex);
+                toplamHesapla();
+            };
+            satir.insertCell(3).appendChild(silBtn);
+
+            toplamHesapla();
+        }
+
+        function toplamHesapla() {
+            let tablo = document.getElementById("urunTablosu");
+            let toplam = 0;
+
+            for (let i = 1; i < tablo.rows.length; i++) {
+                let fiyat = parseFloat(tablo.rows[i].cells[1].innerText);
+                let adet = parseFloat(tablo.rows[i].cells[2].innerText);
+                toplam += fiyat * adet;
+            }
+
+            document.getElementById("toplam").innerText = toplam.toFixed(2);
+        }
+    </script>
+
+</body>
+</html>

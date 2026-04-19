@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Single Page App</title>
+        <style>
+            body{
+                background-color: aquamarine;
+            }
+            h1,h2,h3{
+                color: black;
+                font-weight: bold;
+                letter-spacing: normal;
+                text-transform: capitalize;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 30px;
+            } 
+            bolme1,bolme2{
+            background: #f0f0f0;
+            padding: 20px;
+            width: 300px;
+            margin: auto;
+            border-radius: 8px;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <div class ="bolme1" >
+            <h1>Ürün Ekleme</h1>
+            <form> 
+                <input type="text" id="urun_adi">
+                <button type="button" onclick="login()">Ekle</button>
+            </form>
+        </div>
+        
+
+        <div class ="bolme2">
+            <h2>Ürünler</h2>
+            <p>Ürün Adı|Ürün Birim Fiyatı|Adet|Sil</p>
+            <form> 
+                <p>Elma |
+                <input type="text" id="urun_adi">
+                | <input type="text" id="urun_fiyati">
+                <button type="button" onclick="">X</button>
+                <p>Armut |
+                <input type="text" id="urun_adi">
+                | <input type="text" id="urun_fiyati">
+                <button type="button" onclick="">X</button>
+                <p>Portakal |
+                <input type="text" id="urun_adi">
+                | <input type="text" id="urun_fiyati">
+                <button type="button" onclick="">X</button>
+            </form>
+            
+
+        </div>
+
+        <div><!--3.bolme-->
+            <h3>Toplam</h3>
+
+        </div>
+    
+    </body>
+</html>
