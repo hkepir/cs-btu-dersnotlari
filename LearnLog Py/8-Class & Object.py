@@ -41,9 +41,41 @@ class kitap():
     def __init__(self): #initialize
         pass
 """
+
+#instance methodlar self almak zorundadir.
+#self o an cagirilan nesneyi kast eder
+"""class Araba:
+    def hizlan(self):
+        print("Hızlandı")
+"""
+#araba.hizlan() python bu komutu arka planda su sekilde calistirir
+#Araba.hizlan(araba) yani nesneyi ilk parametre olarak otomatik gonderir.
+
+#-------------------------------------------------------------
+@staticmethod
+class A:
+    @staticmethod
+    def topla(x, y):
+        return x + y
+#self yok
+#nesneye erişim yok
+
+#Çağırma:
+A.topla(2, 3)
+
+@classmethod
+class A:
+    @classmethod
+    def bilgi(cls):
+        print(cls)
+#self yerine cls kullanılır
+#sınıfı temsil eder
+#-------------------------------------------------------------
+
+
 class kitap():
     def __init__(self,ad,yazar,raf,sayfa,yayinevi):
-        self.ad = ad
+        self.ad = ad #self, nesnenin ye ait demek 
         self.yazar = yazar
         self.raf = raf
         self.sayfa = sayfa
