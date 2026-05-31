@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Spor Oyuncu Kayıt</title>
+</head>
+<body>
+    <h2>Yeni Oyuncu Ekleme Formu</h2>
+    
+    <form action="islem.php" method="post">
+        
+        <label>Oyuncu Nickname:</label>
+        <input type="text" name="oyuncu_adi" required><br><br>
+        
+        <label>Takım Seçiniz:</label>
+        <select name="takim_secim">
+            <option value="Galaktik">Galaktik Espor</option>
+            <option value="Anadolu">Anadolu Kartalları</option>
+        </select><br><br>
+        
+        <button type="submit">Oyuncuyu Kaydet</button>
+    </form>
+</body>
+</html>

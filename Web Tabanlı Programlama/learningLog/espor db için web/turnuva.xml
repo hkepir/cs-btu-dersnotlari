@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<turnuva_merkezi>
+    <turnuva>
+        <id>1</id>
+        <adi>Champions Tour 2026</adi>
+        <oyun>Valorant</oyun>
+        <odul>500000$</odul>
+    </turnuva>
+    <turnuva>
+        <id>2</id>
+        <adi>Major Championship Eskişehir</adi>
+        <oyun>CS 2</oyun>
+        <odul>1000000$</odul>
+    </turnuva>
+</turnuva_merkezi>
